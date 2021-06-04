@@ -1,8 +1,4 @@
 
-
-Uploading Recipe Search - Google Chrome 2021-06-04 13-26-30.mp4…
-
-
 # Food Search React
 
 This app helps you find "food-items" based on the search keyword provided by you during search
@@ -20,8 +16,13 @@ Insert gif or link to demo
   
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Screenshot (997)](https://user-images.githubusercontent.com/76695320/120775654-0ad1cd80-c541-11eb-9628-3107ac06ec49.png)
 
+![Screenshot (998)](https://user-images.githubusercontent.com/76695320/120775740-22a95180-c541-11eb-8a5c-b99b69ca05dd.png)
+
+![Screenshot (999)](https://user-images.githubusercontent.com/76695320/120775863-3bb20280-c541-11eb-9b3e-ff077a1dde87.png)
+
+![Screenshot (1000)](https://user-images.githubusercontent.com/76695320/120775888-42d91080-c541-11eb-89d0-9784bf666b38.png)
   
 ## API Reference
 
