@@ -1,73 +1,75 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Food Search React
 
-## Available Scripts
+This app helps you find "food-items" based on the search keyword provided by you during search
 
-In the project directory, you can run:
+And displays all the possible outcomes of "food-items" and displays it in an orderly manner in cards which contains (item name,item ingredients,item image & item calorie)
 
-### `yarn start`
+Makes more options avaliable to prepare dish you want
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Insert gif or link to demo
 
-### `yarn build`
+  
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  
+## API Reference
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Api used is [Edamam](https://www.edamam.com/)
 
-### `yarn eject`
+#### Get all items
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```http
+  GET /api/items
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ `https://api.edamam.com/search?q=${search_keyword}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `search_keyword` | `string` | **Required**. Consumer Search keyword |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_id` | `string` | **Required**. Your API id |
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+  
+## Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run this project, you will need to add the following environment variables to your .env file or in a const variable
 
-### Analyzing the Bundle Size
+`YOUR_EDAMAM_API_ID`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+`YOUR_EDAMAM_API_KEY`
 
-### Making a Progressive Web App
+  
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To deploy this project run
 
-### Advanced Configuration
+```bash
+  npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  
+## Lessons Learned
 
-### Deployment
+This project is made using functional component and Hooks is used heavily in this project.
+Particularly useState and useEffect and fetch api(fetch from api) and also working with api becomes more handy by making this project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The main problems that i had to overcome is state magament and as Edamam only supports 10 requests per minute i had to ensure that the app does not fetch everytime there's an onChange.
+And finally resfreshing the search state everytime the user clicks the "Search" button.
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# Recipe Search (live link)
-https://saikatxshrey.github.io/recipe-search-react/
+  
