@@ -11,7 +11,7 @@ Makes more options avaliable to prepare dish you want
 
 ## Demo
 
-Insert gif or link to demo
+
 
   
 ## Screenshots
