@@ -9,7 +9,7 @@ Makes more options avaliable to prepare dish you want
 
 ## Live Link
 
-[Final Project](https://saikatxshrey.github.io/recipe-search-react/)
+Final Project [Link🚀](https://saikatxshrey.github.io/recipe-search-react/) 
 
 ## Demo
 
