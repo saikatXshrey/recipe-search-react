@@ -11,10 +11,14 @@ Makes more options avaliable to prepare dish you want
 
 ## Demo
 
+Video Demo of the Project
 
+https://user-images.githubusercontent.com/76695320/120796085-fea53a80-c557-11eb-9087-18256a833892.mp4
 
   
 ## Screenshots
+
+Some screenshots of the final App
 
 ![Screenshot (997)](https://user-images.githubusercontent.com/76695320/120775654-0ad1cd80-c541-11eb-9628-3107ac06ec49.png)
 
