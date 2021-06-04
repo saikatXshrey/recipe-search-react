@@ -7,7 +7,9 @@ And displays all the possible outcomes of "food-items" and displays it in an ord
 
 Makes more options avaliable to prepare dish you want
 
+## Live Link
 
+[Final Project](https://saikatxshrey.github.io/recipe-search-react/)
 
 ## Demo
 
